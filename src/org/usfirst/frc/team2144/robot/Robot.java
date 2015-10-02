@@ -161,11 +161,11 @@ public class Robot extends IterativeRobot {
 			/*if (autoLoopCounter < 120) {
 				winch.set(-0.1);
 				myRobot.arcadeDrive(0.5, -0.1);
-			} else */if (autoLoopCounter > 120 && autoLoopCounter < 130) {
+			} else */if (autoLoopCounter > 0 && autoLoopCounter < 10) {
 				// myRobot.arcadeDrive(0,-0.4);
 				out.set(false);
 				in.set(true);
-			} else if (autoLoopCounter > 150 && autoLoopCounter < 210) {
+			} else if (autoLoopCounter > 30 && autoLoopCounter < 90) {
 				winch.set(-0.5);
 			}
 			/*
@@ -180,16 +180,16 @@ public class Robot extends IterativeRobot {
 			 * autoLoopCounter < 1060){ winch.set(-0.1);
 			 * myRobot.arcadeDrive(0.6,0); }//add end comment here
 			 */
-			else if (autoLoopCounter > 210 && autoLoopCounter < 500) {
+			else if (autoLoopCounter > 90 && autoLoopCounter < 380) {
 				winch.set(-0.1);
 				myRobot.arcadeDrive(0.6, -0.23);
-			} else if (autoLoopCounter > 500 && autoLoopCounter < 580
+			} else if (autoLoopCounter > 380 && autoLoopCounter < 460
 					&& winchbottomL.get() && winchbottomR.get()) {
 				winch.set(0.2);
 				myRobot.arcadeDrive(0, 0);
 				out.set(true);
 				in.set(false);
-			} else if (autoLoopCounter > 580 && autoLoopCounter < 620) {
+			} else if (autoLoopCounter > 460 && autoLoopCounter < 480) {
 				winch.set(-0.1);
 				myRobot.arcadeDrive(-0.6, -0.23);
 			}
